@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203c42">
+  <meta name="description" content="14 interaktive Fälle für Lehrpersonen in Baselland: KI-Vorgehen abwägen, Situationen beurteilen und KI-generierte Inhalte prüfen.">
+  <title>Entscheidungssache · KI & Situationsdidaktik</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="cases.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt</a>
+  <header class="topbar">
+    <button class="brand" id="home" aria-label="Zur Startseite"><span class="brand-icon" aria-hidden="true">s<span>i</span>d<span class="brand-dot">.</span></span><span>KI & Situationsdidaktik<small>Interaktive Auswertung</small></span></button>
+    <div class="top-actions"><span class="local-label">Für Lehrpersonen in Baselland</span><button class="quiet" id="info">Hinweise & Quellen</button></div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><span>Kursgrundlage: Dominique Jufer</span><span>Fiktive Fälle · Lokale Selbstauswertung</span></footer>
+  <div id="live" class="sr-only" aria-live="polite"></div>
+  <dialog id="infoDialog" aria-labelledby="infoTitle">
+    <div class="dialog-top"><h2 id="infoTitle">Zur Auswertung</h2><button class="icon-button" data-close="infoDialog" aria-label="Hinweise schliessen">×</button></div>
+    <p>14 erfundene Fälle aus unterschiedlichen Schulstufen. Die Ortsbezüge dienen der Einbettung in den Schulalltag in Baselland. Personen, Angebote, Messdaten und konkrete Schulabläufe sind fiktiv. Dies ist keine offizielle kantonale Prüfung.</p>
+    <h3>So wird ausgewertet</h3><p>Pro Fall gibt es einen Punkt. Bei Mehrfachauswahl müssen alle verlangten Antworten stimmen. Teilweise richtige Antworten erhalten eine differenzierte Rückmeldung, aber keinen Punkt. Es gibt keine Zeitbegrenzung und keine Bestehensgrenze.</p>
+    <p>Eine abgegebene Antwort bleibt für diesen Durchgang bestehen. Am Ende kannst du nicht vollständig gelöste Fälle separat wiederholen. Dieser neue Durchgang wird als Vertiefung bezeichnet.</p>
+    <h3>Dein Fortschritt</h3><p>Die Antworten werden nur in diesem Browser gespeichert. Die Website sendet keine Antworten an eine Lehrperson oder an einen Auswertungsdienst. «Neuer Durchgang» ersetzt den bisherigen lokalen Fortschritt. Im privaten Browsermodus oder beim Löschen von Browserdaten kann der Fortschritt verloren gehen.</p>
+    <h3>Grundlagen</h3>
+    <ul class="source-list">
+      <li>Dominique Jufer: <em>KI-Einsatz in der Situationsdidaktik</em>. Kursunterlagen, bereitgestellte Fassung. Grundlage für die Anwendungsgebiete und Qualitätskriterien.</li>
+      <li>Ghisla, G., Boldrini, E. & Bausch, L. (2014): <a href="https://www.hkvaarau.ch/sites/default/files/2019-02/allgemein_gemeinsam_situationsdidaktik_de.pdf" target="_blank" rel="noopener">SiD – Situationsdidaktik. Ein Leitfaden für Lehrkräfte in der Berufsbildung</a>. EHB. Didaktischer Bezugsrahmen; die Fälle und Lösungskommentare wurden für dieses Quiz erstellt.</li>
+      <li>Kanton Basel-Landschaft, ICT Bildung: <a href="https://www.baselland.ch/politik-und-behorden/direktionen/bildungs-kultur-und-sportdirektion/it-sbl/paedagogischer-ict-support-ict-bildung/kuenstliche-intelligenz-ki" target="_blank" rel="noopener">KI in der Schule und Lernzyklus «KI und Unterricht»</a>. Weiterführendes regionales Angebot.</li>
+    </ul>
+    <p class="small">Stand dieser Quizfassung: 10. November 2026. Technische Möglichkeiten von KI-Programmen gelten jeweils unter den im Fall genannten Voraussetzungen.</p>
+    <button class="primary" data-close="infoDialog">Zurück zum Quiz</button>
+  </dialog>
+  <dialog id="restartDialog" aria-labelledby="restartTitle">
+    <div class="dialog-top"><h2 id="restartTitle">Neuen Durchgang starten?</h2><button class="icon-button" data-close="restartDialog" aria-label="Dialog schliessen">×</button></div>
+    <p>Der bisherige Fortschritt in diesem Browser wird ersetzt. Alle 14 Fälle beginnen neu; die Antwortreihenfolge wird neu gemischt.</p>
+    <div class="dialog-actions"><button class="quiet" data-close="restartDialog">Zurück</button><button class="primary" id="confirmRestart">Neu beginnen</button></div>
+  </dialog>
+  <noscript><p class="noscript">Für die interaktive Auswertung muss JavaScript aktiviert sein.</p></noscript>
+</body>
+</html>
